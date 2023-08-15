@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "minerbags",
+	"version": "${version}",
+	"name": "MinerBags",
+	"description": "Adds bags to Minecraft. All there really is to say.",
+	"authors": [
+		"MineRobber9000"
+	],
+	"contact": {
+		"homepage": "https://github.com/MineRobber9000/MinerBags",
+		"sources": "https://github.com/MineRobber9000/MinerBags"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minerbags/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.minerobber9000.minerbags.MinerBagsMod"
+		],
+		"client": [
+			"io.github.minerobber9000.minerbags.MinerBagsModClient"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minerbags:bag_crafting",
+    "pattern": [
+        "###",
+        "#X#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond"
+        },
+        "X": {
+            "tag": "minerbags:usable_in_bag_crafting"
+        }
+    },
+    "result": {
+        "item": "minerbags:diamond_bag",
+        "count": 1
+    }
+}

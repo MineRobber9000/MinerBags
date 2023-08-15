@@ -1,0 +1,43 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "hasleather": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather"
+                    }
+                ]
+            }
+        },
+        "hasshulkerbox": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "minerbags:usable_in_bag_crafting"
+                    }
+                ]
+            }
+        },
+        "hastherecipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "minerbags:bag"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "hasleather",
+            "hasshulkerbox",
+            "hastherecipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "minerbags:bag"
+        ]
+    }
+}

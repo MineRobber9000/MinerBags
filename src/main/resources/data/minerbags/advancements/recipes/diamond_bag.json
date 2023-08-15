@@ -1,0 +1,43 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "hasdiamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond"
+                    }
+                ]
+            }
+        },
+        "hasshulkerbox": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "minerbags:usable_in_bag_crafting"
+                    }
+                ]
+            }
+        },
+        "hastherecipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "minerbags:diamond_bag"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "hasdiamond",
+            "hasshulkerbox",
+            "hastherecipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "minerbags:diamond_bag"
+        ]
+    }
+}
